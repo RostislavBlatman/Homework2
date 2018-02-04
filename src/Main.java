@@ -6,7 +6,7 @@ public class Main {
         int i = 1;
         double an = 0.0;
         float e;
-        System.out.println("Введите число е: ");
+        System.out.print("Введите число е: ");
         Scanner x = new Scanner(System.in);
         e = x.nextFloat();
         do{
@@ -15,6 +15,7 @@ public class Main {
             System.out.println("a[" + i + "] = " + an);
             i++;
         }
-        while(an < e );
+        while(an >= e );
+        System.out.println("Наименьший номер элемента последовательности, для которого выполняется условие: " + (i-1));
     }
 }
